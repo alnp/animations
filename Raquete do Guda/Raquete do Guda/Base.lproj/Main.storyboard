@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Raquete_do_Guda" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" image="BG" translatesAutoresizingMaskIntoConstraints="NO" id="yd7-Dc-GGN">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Moises" translatesAutoresizingMaskIntoConstraints="NO" id="i53-LI-FgM">
+                                <rect key="frame" x="70" y="328" width="274" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CortinaFrontal" translatesAutoresizingMaskIntoConstraints="NO" id="NMk-vu-ut7">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CortinaDireita" translatesAutoresizingMaskIntoConstraints="NO" id="Ky9-G8-ka5">
+                                <rect key="frame" x="207" y="0.0" width="257" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CortinaEsquerda" translatesAutoresizingMaskIntoConstraints="NO" id="gC7-cQ-Sn7">
+                                <rect key="frame" x="-50" y="0.0" width="257" height="896"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.050000000000000003" height="1"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NMk-vu-ut7" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="2PI-ZM-uOe"/>
+                            <constraint firstItem="Ky9-G8-ka5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="5Xt-zx-tFy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="centerX" secondItem="gC7-cQ-Sn7" secondAttribute="trailing" id="FrX-AI-bA5"/>
+                            <constraint firstItem="yd7-Dc-GGN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="H7H-Dt-wTY"/>
+                            <constraint firstItem="NMk-vu-ut7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KF1-zF-YdR"/>
+                            <constraint firstItem="gC7-cQ-Sn7" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="MUe-cP-jSl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" secondItem="gC7-cQ-Sn7" secondAttribute="leading" constant="50" id="eHG-f2-Kql"/>
+                            <constraint firstItem="yd7-Dc-GGN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gP2-t6-0CD"/>
+                            <constraint firstItem="Ky9-G8-ka5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nfp-db-Qox"/>
+                            <constraint firstItem="NMk-vu-ut7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="pTM-76-e9j"/>
+                            <constraint firstItem="Ky9-G8-ka5" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="pZj-5y-tAP"/>
+                            <constraint firstItem="yd7-Dc-GGN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qxb-oV-jRR"/>
+                            <constraint firstItem="NMk-vu-ut7" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="sa2-CI-UCS"/>
+                            <constraint firstItem="Ky9-G8-ka5" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="50" id="tbF-B0-A8g"/>
+                            <constraint firstItem="gC7-cQ-Sn7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xnL-Jx-juO"/>
+                            <constraint firstItem="yd7-Dc-GGN" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="zNG-M6-s1c"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="414" height="896"/>
+                    <connections>
+                        <outlet property="leftCurtain" destination="gC7-cQ-Sn7" id="esS-mt-PBF"/>
+                        <outlet property="leftCurtainConstraint" destination="FrX-AI-bA5" id="pnj-Uh-fJL"/>
+                        <outlet property="moises" destination="i53-LI-FgM" id="g9a-hw-BAy"/>
+                        <outlet property="rightCurtain" destination="Ky9-G8-ka5" id="iGR-Np-wgN"/>
+                        <outlet property="rightCurtainConstraint" destination="5Xt-zx-tFy" id="aeQ-Vq-H5m"/>
+                        <outlet property="topCurtain" destination="NMk-vu-ut7" id="ska-Mj-vUT"/>
+                        <outlet property="topCurtainConstraint" destination="pTM-76-e9j" id="cvO-x4-fMJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BG" width="1080" height="1920"/>
+        <image name="CortinaDireita" width="641" height="1090"/>
+        <image name="CortinaEsquerda" width="641" height="1090"/>
+        <image name="CortinaFrontal" width="745" height="1063"/>
+        <image name="Moises" width="991" height="841"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
