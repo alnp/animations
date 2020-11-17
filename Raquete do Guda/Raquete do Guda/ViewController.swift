@@ -14,8 +14,6 @@ class ViewController: UIViewController {
     @IBOutlet var leftCurtain: UIImageView!
     @IBOutlet var rightCurtain: UIImageView!
     
-    @IBOutlet var slider: UISlider!
-    
     @IBOutlet var topCurtainConstraint: NSLayoutConstraint!
     @IBOutlet var leftCurtainConstraint: NSLayoutConstraint!
     @IBOutlet var rightCurtainConstraint: NSLayoutConstraint!
@@ -56,37 +54,23 @@ class ViewController: UIViewController {
     func pullTopCurtain() {
         topCurtainConstraint.constant -= topCurtain.frame.size.height
         
-        animator = UIViewPropertyAnimator (
-            duration: 1.5,
-            curve: .easeOut) {
+        UIView.animate(withDuration: 1.5, delay: 0.7, options: .curveEaseOut, animations: {
             self.view.layoutIfNeeded()
-        }
-        
-        animator?.pausesOnCompletion =  true
-        animator?.startAnimation()
-        
-        
-//        UIView.animate(withDuration: 1.5, delay: 0.7, options: .curveEaseOut, animations: {
-//            self.view.layoutIfNeeded()
-//        }, completion: { finished in
-//            print("Top curtain raised!")
-//        })
+        }, completion: { finished in
+            print("Top curtain raised!")
+        })
     }
     
     func pullHorizontalCurtains() {
         leftCurtainConstraint.constant += view.frame.size.width/2
         rightCurtainConstraint.constant += view.frame.size.width/2
         
-        animator?.addAnimations({
+        UIView.animate(withDuration: 1.7, delay: 1.0, options: .curveEaseOut, animations: {
+
             self.view.layoutIfNeeded()
-        }, delayFactor: 1.0)
-        
-//        UIView.animate(withDuration: 1.7, delay: 1.0, options: .curveEaseOut, animations: {
-//
-//            self.view.layoutIfNeeded()
-//        }, completion: { finished in
-//            print("Horizontal curtains opened!")
-//        })
+        }, completion: { finished in
+            print("Horizontal curtains opened!")
+        })
     }
     
     func moveMoisesLeft() {
@@ -167,12 +151,6 @@ class ViewController: UIViewController {
                     guard let tap = self.tap else { return }
                     self.view.removeGestureRecognizer(tap)
                     print("Moises returned to center")
-                    
-                    self.animator?.pauseAnimation()
-                    self.animator?.isReversed = true
-                    self.animator?.startAnimation()
-                    
-                    self.slider.isHidden = false
                 })
             })
         } else {
@@ -180,8 +158,5 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func scrub(_ sender: UISlider) {
-        animator?.fractionComplete = CGFloat(sender.value)
-    }
 }
 

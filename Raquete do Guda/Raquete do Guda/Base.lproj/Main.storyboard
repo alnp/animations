@@ -33,20 +33,10 @@
                                 <rect key="frame" x="-50" y="0.0" width="257" height="896"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.050000000000000003" height="1"/>
                             </imageView>
-                            <slider hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="h37-YF-CU2">
-                                <rect key="frame" x="130" y="831" width="154" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="z9j-Zb-4mc"/>
-                                </constraints>
-                                <connections>
-                                    <action selector="scrub:" destination="BYZ-38-t0r" eventType="valueChanged" id="JQJ-Bw-L6S"/>
-                                </connections>
-                            </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="h37-YF-CU2" secondAttribute="bottom" constant="1" id="1us-s8-L9a"/>
                             <constraint firstItem="NMk-vu-ut7" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="2PI-ZM-uOe"/>
                             <constraint firstItem="Ky9-G8-ka5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="5Xt-zx-tFy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="centerX" secondItem="gC7-cQ-Sn7" secondAttribute="trailing" id="FrX-AI-bA5"/>
@@ -54,7 +44,6 @@
                             <constraint firstItem="NMk-vu-ut7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KF1-zF-YdR"/>
                             <constraint firstItem="gC7-cQ-Sn7" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="MUe-cP-jSl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" secondItem="gC7-cQ-Sn7" secondAttribute="leading" constant="50" id="eHG-f2-Kql"/>
-                            <constraint firstItem="h37-YF-CU2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eZ4-7y-WVE"/>
                             <constraint firstItem="yd7-Dc-GGN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gP2-t6-0CD"/>
                             <constraint firstItem="Ky9-G8-ka5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nfp-db-Qox"/>
                             <constraint firstItem="NMk-vu-ut7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="pTM-76-e9j"/>
@@ -73,7 +62,6 @@
                         <outlet property="moises" destination="i53-LI-FgM" id="g9a-hw-BAy"/>
                         <outlet property="rightCurtain" destination="Ky9-G8-ka5" id="iGR-Np-wgN"/>
                         <outlet property="rightCurtainConstraint" destination="5Xt-zx-tFy" id="aeQ-Vq-H5m"/>
-                        <outlet property="slider" destination="h37-YF-CU2" id="1vv-k2-hPf"/>
                         <outlet property="topCurtain" destination="NMk-vu-ut7" id="ska-Mj-vUT"/>
                         <outlet property="topCurtainConstraint" destination="pTM-76-e9j" id="cvO-x4-fMJ"/>
                     </connections>
