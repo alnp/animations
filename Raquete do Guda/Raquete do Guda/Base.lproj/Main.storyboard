@@ -58,12 +58,9 @@
                     <size key="freeformSize" width="414" height="896"/>
                     <connections>
                         <outlet property="leftCurtain" destination="gC7-cQ-Sn7" id="esS-mt-PBF"/>
-                        <outlet property="leftCurtainConstraint" destination="FrX-AI-bA5" id="pnj-Uh-fJL"/>
                         <outlet property="moises" destination="i53-LI-FgM" id="g9a-hw-BAy"/>
                         <outlet property="rightCurtain" destination="Ky9-G8-ka5" id="iGR-Np-wgN"/>
-                        <outlet property="rightCurtainConstraint" destination="5Xt-zx-tFy" id="aeQ-Vq-H5m"/>
                         <outlet property="topCurtain" destination="NMk-vu-ut7" id="ska-Mj-vUT"/>
-                        <outlet property="topCurtainConstraint" destination="pTM-76-e9j" id="cvO-x4-fMJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
